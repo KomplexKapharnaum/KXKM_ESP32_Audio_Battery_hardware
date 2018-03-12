@@ -176,17 +176,6 @@ F 3 "" H 3000 4900 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Conn_01x02 J9
-U 1 1 5A9FC7F6
-P 3400 4650
-F 0 "J9" H 3400 4750 50  0000 C CNN
-F 1 "Conn_01x02" H 3400 4450 50  0001 C CNN
-F 2 "Connectors_TestPoints:Test_Point_2Pads_Pitch2.54mm_Drill0.8mm" H 3400 4650 50  0001 C CNN
-F 3 "" H 3400 4650 50  0001 C CNN
-	1    3400 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR033
 U 1 1 5A9FC90F
 P 2150 1700
@@ -217,7 +206,11 @@ Wire Wire Line
 Wire Wire Line
 	2000 1450 1900 1450
 Wire Wire Line
-	5800 1400 8650 1400
+	5800 1400 5950 1400
+Wire Wire Line
+	5950 1400 6950 1400
+Wire Wire Line
+	6950 1400 8650 1400
 Wire Wire Line
 	8650 1500 8450 1500
 Wire Wire Line
@@ -225,7 +218,9 @@ Wire Wire Line
 Text HLabel 4000 1800 0    60   Input ~ 0
 MAIN_OUT_EN
 Wire Wire Line
-	8350 2400 8650 2400
+	8350 2400 8450 2400
+Wire Wire Line
+	8450 2400 8650 2400
 Connection ~ 8450 2300
 Wire Wire Line
 	6950 2300 7050 2300
@@ -234,7 +229,9 @@ Wire Wire Line
 Wire Wire Line
 	6950 2550 8450 2550
 Wire Wire Line
-	8450 2400 8450 2600
+	8450 2400 8450 2550
+Wire Wire Line
+	8450 2550 8450 2600
 Connection ~ 8450 2400
 $Comp
 L C_Small C5
@@ -270,9 +267,13 @@ F 3 "" H 1500 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 6400 1500 6500
+	1500 6400 1500 6450
 Wire Wire Line
-	1500 6450 2500 6450
+	1500 6450 1500 6500
+Wire Wire Line
+	1500 6450 1650 6450
+Wire Wire Line
+	1650 6450 2500 6450
 Wire Wire Line
 	1650 6450 1650 6500
 Connection ~ 1500 6450
@@ -326,7 +327,9 @@ Wire Wire Line
 Wire Wire Line
 	3350 6750 3350 6950
 Wire Wire Line
-	3350 6950 4750 6950
+	3350 6950 4250 6950
+Wire Wire Line
+	4250 6950 4750 6950
 $Comp
 L GND #PWR038
 U 1 1 5A9FF8A5
@@ -350,7 +353,9 @@ F 3 "" H 3450 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 6550 3850 6550
+	3300 6550 3450 6550
+Wire Wire Line
+	3450 6550 3850 6550
 Wire Wire Line
 	3450 6550 3450 6500
 Connection ~ 3450 6550
@@ -370,7 +375,9 @@ Wire Wire Line
 Wire Wire Line
 	3350 6450 3350 6250
 Wire Wire Line
-	3350 6250 4050 6250
+	3350 6250 3450 6250
+Wire Wire Line
+	3450 6250 4050 6250
 Wire Wire Line
 	3450 6250 3450 6300
 $Comp
@@ -386,7 +393,15 @@ F 3 "" H 3950 6550 50  0001 C CNN
 $EndComp
 Connection ~ 3450 6250
 Wire Wire Line
-	4050 6550 5950 6550
+	4050 6550 4250 6550
+Wire Wire Line
+	4250 6550 4750 6550
+Wire Wire Line
+	4750 6550 5150 6550
+Wire Wire Line
+	5150 6550 5600 6550
+Wire Wire Line
+	5600 6550 5950 6550
 $Comp
 L R_Small R9
 U 1 1 5AA004D5
@@ -411,7 +426,9 @@ F 3 "" H 4250 7100 50  0001 C CNN
 $EndComp
 Connection ~ 4250 6550
 Wire Wire Line
-	4250 6850 4250 7000
+	4250 6850 4250 6950
+Wire Wire Line
+	4250 6950 4250 7000
 Connection ~ 4250 6950
 Wire Wire Line
 	4250 7200 4250 7250
@@ -489,7 +506,9 @@ Wire Wire Line
 	5150 6550 5150 6650
 Connection ~ 4750 6550
 Wire Wire Line
-	5600 6500 5600 6650
+	5600 6500 5600 6550
+Wire Wire Line
+	5600 6550 5600 6650
 Connection ~ 5150 6550
 $Comp
 L +3.3V #PWR043
@@ -532,36 +551,22 @@ $EndComp
 Wire Wire Line
 	3000 4400 3000 4500
 Wire Wire Line
-	3000 4450 3150 4450
-Wire Wire Line
-	3150 4450 3150 4650
-Wire Wire Line
-	3150 4650 3200 4650
-Connection ~ 3000 4450
-Wire Wire Line
-	3200 4750 3150 4750
-Wire Wire Line
-	3150 4750 3150 4950
-Wire Wire Line
-	3150 4950 3000 4950
-Wire Wire Line
-	3000 4900 3000 5000
-Text Notes 3500 4800 0    60   ~ 0
-Connector for external\npush button
+	3000 4900 3000 4950
 $Comp
 L R_Small R8
 U 1 1 5AA0358A
-P 3000 5100
-F 0 "R8" H 3030 5120 50  0000 L CNN
-F 1 "470R" H 3030 5060 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 3000 5100 50  0001 C CNN
-F 3 "" H 3000 5100 50  0001 C CNN
-	1    3000 5100
+P 3000 5050
+F 0 "R8" H 3030 5070 50  0000 L CNN
+F 1 "470R" H 3030 5010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 3000 5050 50  0001 C CNN
+F 3 "" H 3000 5050 50  0001 C CNN
+	1    3000 5050
 	1    0    0    -1  
 $EndComp
-Connection ~ 3000 4950
 Wire Wire Line
-	3000 5200 3000 5300
+	3000 5150 3000 5250
+Wire Wire Line
+	3000 5250 3000 5300
 $Comp
 L GND #PWR045
 U 1 1 5AA037A6
@@ -576,7 +581,9 @@ $EndComp
 Wire Wire Line
 	1850 5250 2050 5250
 Wire Wire Line
-	2650 5250 3250 5250
+	2650 5250 3000 5250
+Wire Wire Line
+	3000 5250 3250 5250
 Connection ~ 3000 5250
 Wire Wire Line
 	2350 6550 2350 5450
@@ -650,15 +657,21 @@ $EndComp
 Wire Wire Line
 	2000 1350 2150 1350
 Wire Wire Line
-	2150 1300 2150 1400
+	2150 1300 2150 1350
+Wire Wire Line
+	2150 1350 2150 1400
 Connection ~ 2150 1350
 Wire Wire Line
 	2000 1650 2150 1650
 Wire Wire Line
-	2150 1600 2150 1700
+	2150 1600 2150 1650
+Wire Wire Line
+	2150 1650 2150 1700
 Connection ~ 2150 1650
 Wire Wire Line
-	8350 2300 8650 2300
+	8350 2300 8450 2300
+Wire Wire Line
+	8450 2300 8650 2300
 $Comp
 L BTS50080-1TEA U4
 U 1 1 5AA32312
@@ -736,7 +749,9 @@ F 3 "" H 4450 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 1800 4150 1800
+	4000 1800 4100 1800
+Wire Wire Line
+	4100 1800 4150 1800
 Wire Wire Line
 	4100 1800 4100 1850
 Connection ~ 4100 1800
@@ -763,7 +778,9 @@ F 3 "" H 5950 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 1700 6050 1700
+	5800 1700 5950 1700
+Wire Wire Line
+	5950 1700 6050 1700
 Wire Wire Line
 	5950 1700 5950 1850
 $Comp
@@ -883,7 +900,7 @@ U 3 1 5AA2F8DA
 P 4100 1950
 F 0 "RN3" H 4130 1970 50  0000 L CNN
 F 1 "10k" H 4130 1910 50  0000 L CNN
-F 2 "" H 4100 1950 50  0001 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" H 4100 1950 50  0001 C CNN
 F 3 "" H 4100 1950 50  0001 C CNN
 	3    4100 1950
 	-1   0    0    -1  
