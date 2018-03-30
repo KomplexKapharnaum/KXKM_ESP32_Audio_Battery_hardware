@@ -104,8 +104,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "ESP32 Audio & Battery module"
-Date "2018-03-15"
-Rev "1.0"
+Date "2018-03-29"
+Rev "1.1"
 Comp "KXKM"
 Comment1 "Tom Magnier"
 Comment2 ""
@@ -947,7 +947,7 @@ L R_Pack04_Unit RN2
 U 3 1 5AA2CFB3
 P 1500 7100
 F 0 "RN2" V 1450 6900 50  0000 L CNN
-F 1 "10k" V 1450 7150 50  0000 L CNN
+F 1 "1k" V 1450 7150 50  0000 L CNN
 F 2 "Resistors_SMD:R_Array_Convex_4x0402" H 1500 7100 50  0001 C CNN
 F 3 "" H 1500 7100 50  0001 C CNN
 	3    1500 7100
@@ -958,7 +958,7 @@ L R_Pack04_Unit RN2
 U 2 1 5AA2DBF0
 P 3150 7300
 F 0 "RN2" V 3050 7200 50  0000 L CNN
-F 1 "10k" V 3250 7200 50  0000 L CNN
+F 1 "1k" V 3250 7200 50  0000 L CNN
 F 2 "Resistors_SMD:R_Array_Convex_4x0402" H 3150 7300 50  0001 C CNN
 F 3 "" H 3150 7300 50  0001 C CNN
 	2    3150 7300
@@ -969,7 +969,7 @@ L R_Pack04_Unit RN2
 U 1 1 5AA2E987
 P 3150 6800
 F 0 "RN2" V 3050 6700 50  0000 L CNN
-F 1 "10k" V 3250 6700 50  0000 L CNN
+F 1 "1k" V 3250 6700 50  0000 L CNN
 F 2 "Resistors_SMD:R_Array_Convex_4x0402" H 3150 6800 50  0001 C CNN
 F 3 "" H 3150 6800 50  0001 C CNN
 	1    3150 6800
@@ -1033,8 +1033,6 @@ Wire Wire Line
 	3600 7250 3600 7000
 Wire Wire Line
 	5000 6550 5450 6550
-Wire Wire Line
-	4850 6950 4850 7000
 Connection ~ 3000 6800
 Wire Wire Line
 	3000 6850 3000 6800
@@ -1224,7 +1222,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 7250 3000 7250
 Wire Wire Line
-	3900 7550 4500 7550
+	3900 7550 4700 7550
 Wire Wire Line
 	3250 7300 3600 7300
 Wire Wire Line
@@ -1442,4 +1440,19 @@ F 3 "" H 3300 4550 50  0001 C CNN
 	1    3300 4550
 	1    0    0    -1  
 $EndComp
+Text Notes 3550 6050 0    60   ~ 0
+/!\ Don't drive SDA low ! \nIt would drive ESP32_BOOT and \nin turn PROG_DTR low \nthus preventing reset by DTR.
+$Comp
+L TEST_1P J11
+U 1 1 5ABD450A
+P 4700 7500
+F 0 "J11" H 4700 7770 50  0000 C CNN
+F 1 "TEST_1P" H 4700 7700 50  0000 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 4900 7500 50  0001 C CNN
+F 3 "" H 4900 7500 50  0001 C CNN
+	1    4700 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 7550 4700 7500
 $EndSCHEMATC
