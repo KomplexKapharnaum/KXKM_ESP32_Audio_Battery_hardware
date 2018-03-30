@@ -3665,7 +3665,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AAAA9F5) (tstamp 5AAA9D1A)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5ABE056A) (tstamp 5AAA9D1A)
     (at 136.75 86.5 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -3674,7 +3674,7 @@
     (fp_text reference R1 (at 1.5 0.25 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10k (at 0 -1.5 90) (layer B.Fab) hide
+    (fp_text value 10k,1% (at 0 -1.5 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 90) (layer B.Fab)
@@ -3701,7 +3701,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5AAAA9DA) (tstamp 5AAAAB5F)
+  (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 5ABE058A) (tstamp 5AAAAB5F)
     (at 105.75 122.25)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -3710,7 +3710,7 @@
     (fp_text reference R2 (at 2 0) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10k (at 0 -1.5) (layer B.Fab) hide
+    (fp_text value 10k,1% (at 0 -1.5) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0) (layer B.Fab)
