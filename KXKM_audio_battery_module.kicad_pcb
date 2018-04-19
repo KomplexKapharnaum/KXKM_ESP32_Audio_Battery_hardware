@@ -2251,7 +2251,7 @@
     (tags "resistor 0603")
     (path /5A8A8BB2/5AA004D5)
     (attr smd)
-    (fp_text reference R9 (at 3 2.5 180) (layer B.Fab)
+    (fp_text reference R9 (at 2 -0.25 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value 31.6k,1% (at 0 -1.5 90) (layer B.Fab) hide
@@ -2287,7 +2287,7 @@
     (tags "resistor 0603")
     (path /5A8A8BB2/5AA0053D)
     (attr smd)
-    (fp_text reference R10 (at -2 1.25 360) (layer B.Fab)
+    (fp_text reference R10 (at -3 -0.75 360) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value 10k,1% (at 0 -1.5 270) (layer B.Fab) hide
