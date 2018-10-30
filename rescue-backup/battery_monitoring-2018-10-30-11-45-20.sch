@@ -1,6 +1,104 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:espressif-xess
+LIBS:tom_kicad
+LIBS:stm32
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:MIKROE_CLICK
 LIBS:KXKM_audio_battery_module-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +113,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L KXKM_audio_battery_module-rescue:STM32F030F4Px U7
+L STM32F030F4Px U7
 U 1 1 5A8AB82B
 P 6650 2050
 F 0 "U7" H 6650 2150 50  0000 C CNN
@@ -26,7 +124,7 @@ F 3 "" H 6650 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:SW_SP3T SW4
+L SW_SP3T SW4
 U 1 1 5A8ABB36
 P 1150 5350
 F 0 "SW4" H 1150 5550 50  0000 C CNN
@@ -37,7 +135,7 @@ F 3 "" H 525 5525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:TC_SWD P1
+L TC_SWD P1
 U 1 1 5A9FA4FD
 P 1350 2050
 F 0 "P1" H 1100 2250 60  0000 C CNN
@@ -58,7 +156,7 @@ EN_PUSH_BUTTON
 Text HLabel 2900 1650 0    60   Output ~ 0
 ESP32_EN
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C23
+L C_Small C23
 U 1 1 5AA0E0D5
 P 3000 3200
 F 0 "C23" H 3010 3270 50  0000 L CNN
@@ -69,7 +167,7 @@ F 3 "" H 3000 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C22
+L C_Small C22
 U 1 1 5AA0E151
 P 2850 3200
 F 0 "C22" H 2860 3270 50  0000 L CNN
@@ -80,7 +178,7 @@ F 3 "" H 2850 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:+3.3V #PWR084
+L +3.3V #PWR084
 U 1 1 5AA0E175
 P 2850 3000
 F 0 "#PWR084" H 2850 2850 50  0001 C CNN
@@ -104,7 +202,7 @@ Wire Wire Line
 	3350 2950 3450 2950
 Connection ~ 3350 3050
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR085
+L GND #PWR085
 U 1 1 5AA0E1F8
 P 2850 3300
 F 0 "#PWR085" H 2850 3050 50  0001 C CNN
@@ -115,7 +213,7 @@ F 3 "" H 2850 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR086
+L GND #PWR086
 U 1 1 5AA0E21F
 P 3000 3300
 F 0 "#PWR086" H 3000 3050 50  0001 C CNN
@@ -126,7 +224,7 @@ F 3 "" H 3000 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR087
+L GND #PWR087
 U 1 1 5AA0E254
 P 9900 3000
 F 0 "#PWR087" H 9900 2750 50  0001 C CNN
@@ -143,7 +241,7 @@ Wire Wire Line
 Text Notes 1250 1850 0    60   ~ 0
 USART1 is also used by\nthe serial bootloader.
 $Comp
-L KXKM_audio_battery_module-rescue:+BATT #PWR088
+L +BATT #PWR088
 U 1 1 5AA0E847
 P 1000 6650
 F 0 "#PWR088" H 1000 6500 50  0001 C CNN
@@ -156,7 +254,7 @@ $EndComp
 Text Notes 600  7650 0    60   ~ 0
 Battery voltage measurement\n+BATT = 30V => 3.14V
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR089
+L GND #PWR089
 U 1 1 5AA0EDE2
 P 1000 7250
 F 0 "#PWR089" H 1000 7000 50  0001 C CNN
@@ -167,7 +265,7 @@ F 3 "" H 1000 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R15
+L R_Small R15
 U 1 1 5AA0EE1E
 P 1000 6800
 F 0 "R15" H 1030 6820 50  0000 L CNN
@@ -178,7 +276,7 @@ F 3 "" H 1000 6800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R16
+L R_Small R16
 U 1 1 5AA0EE4E
 P 1000 7100
 F 0 "R16" H 1030 7120 50  0000 L CNN
@@ -200,7 +298,7 @@ Connection ~ 1000 6950
 Text Label 2100 6950 2    60   ~ 0
 VBAT_MEAS
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C21
+L C_Small C21
 U 1 1 5AA0F3C7
 P 1250 7100
 F 0 "C21" H 1260 7170 50  0000 L CNN
@@ -211,7 +309,7 @@ F 3 "" H 1250 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR090
+L GND #PWR090
 U 1 1 5AA0F425
 P 1250 7250
 F 0 "#PWR090" H 1250 7000 50  0001 C CNN
@@ -241,7 +339,7 @@ Wire Wire Line
 Text Notes 5050 7600 0    60   ~ 0
 LED array for battery level display
 $Comp
-L KXKM_audio_battery_module-rescue:R_Pack04 RN4
+L R_Pack04 RN4
 U 1 1 5AA115B7
 P 5500 6950
 F 0 "RN4" V 5200 6950 50  0000 C CNN
@@ -276,7 +374,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 7050 5750 7050
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR091
+L GND #PWR091
 U 1 1 5AA14FB1
 P 850 5400
 F 0 "#PWR091" H 850 5150 50  0001 C CNN
@@ -333,7 +431,7 @@ Text Notes 1100 2500 0    60   ~ 0
 SWDIO & SWCLK can still be used\nif selector is in pos. 3
 NoConn ~ 1950 2150
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR092
+L GND #PWR092
 U 1 1 5AA18D74
 P 750 2150
 F 0 "#PWR092" H 750 1900 50  0001 C CNN
@@ -344,7 +442,7 @@ F 3 "" H 750 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:+3.3V #PWR093
+L +3.3V #PWR093
 U 1 1 5AA18DFB
 P 750 1950
 F 0 "#PWR093" H 750 1800 50  0001 C CNN
@@ -378,7 +476,7 @@ NoConn ~ 3450 2750
 Text Notes 2100 5450 0    60   ~ 0
 Li-Po\nLi-Fe\nCustom (set by ESP32)
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR094
+L GND #PWR094
 U 1 1 5AA153F7
 P 10300 2450
 F 0 "#PWR094" H 10300 2200 50  0001 C CNN
@@ -396,7 +494,7 @@ Wire Wire Line
 	10300 2200 10300 2250
 Connection ~ 10150 2650
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C24
+L C_Small C24
 U 1 1 5AA16056
 P 10150 2950
 F 0 "C24" H 10160 3020 50  0000 L CNN
@@ -407,7 +505,7 @@ F 3 "" H 10150 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR095
+L GND #PWR095
 U 1 1 5AA1619D
 P 10150 3050
 F 0 "#PWR095" H 10150 2800 50  0001 C CNN
@@ -425,7 +523,7 @@ LOAD_I_SENSE
 Wire Wire Line
 	2900 1450 3450 1450
 $Comp
-L KXKM_audio_battery_module-rescue:R_Pack04_Unit RN2
+L R_Pack04_Unit RN2
 U 4 1 5AA2FEC7
 P 10300 2350
 F 0 "RN2" H 10330 2370 50  0000 L CNN
@@ -436,7 +534,7 @@ F 3 "" H 10300 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:LED_Small D5
+L LED_Small D5
 U 1 1 5AA7CC21
 P 6300 6900
 F 0 "D5" H 6250 7025 50  0000 L CNN
@@ -447,7 +545,7 @@ F 3 "" V 6300 6900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:LED_Small D10
+L LED_Small D10
 U 1 1 5AA7CEBB
 P 6650 6600
 F 0 "D10" H 6600 6725 50  0000 L CNN
@@ -458,7 +556,7 @@ F 3 "" V 6650 6600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:LED_Small D6
+L LED_Small D6
 U 1 1 5AA7CF29
 P 6300 7200
 F 0 "D6" H 6250 7325 50  0000 L CNN
@@ -469,7 +567,7 @@ F 3 "" V 6300 7200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:LED_Small D7
+L LED_Small D7
 U 1 1 5AA7CF73
 P 6650 7200
 F 0 "D7" H 6600 7325 50  0000 L CNN
@@ -480,7 +578,7 @@ F 3 "" V 6650 7200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:LED_Small D9
+L LED_Small D9
 U 1 1 5AA7CFBC
 P 6300 6600
 F 0 "D9" H 6250 6725 50  0000 L CNN
@@ -491,7 +589,7 @@ F 3 "" V 6300 6600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:LED_Small D8
+L LED_Small D8
 U 1 1 5AA7D01E
 P 6650 6900
 F 0 "D8" H 6600 7025 50  0000 L CNN

@@ -1,6 +1,104 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:espressif-xess
+LIBS:tom_kicad
+LIBS:stm32
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:MIKROE_CLICK
 LIBS:KXKM_audio_battery_module-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +113,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L KXKM_audio_battery_module-rescue:Audio-Jack-3 J12
+L Audio-Jack-3 J12
 U 1 1 5A8AB7BC
 P 8300 4500
 F 0 "J12" H 8250 4675 50  0000 C CNN
@@ -26,7 +124,7 @@ F 3 "" H 8550 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C15
+L C_Small C15
 U 1 1 5AA04141
 P 3950 2600
 F 0 "C15" H 3960 2670 50  0000 L CNN
@@ -37,7 +135,7 @@ F 3 "" H 3950 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C14
+L C_Small C14
 U 1 1 5AA04520
 P 3700 2600
 F 0 "C14" H 3710 2670 50  0000 L CNN
@@ -48,7 +146,7 @@ F 3 "" H 3700 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C13
+L C_Small C13
 U 1 1 5AA04554
 P 3450 2600
 F 0 "C13" H 3460 2670 50  0000 L CNN
@@ -59,7 +157,7 @@ F 3 "" H 3450 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:+3.3V #PWR064
+L +3.3V #PWR064
 U 1 1 5AA04578
 P 2700 2400
 F 0 "#PWR064" H 2700 2250 50  0001 C CNN
@@ -70,7 +168,7 @@ F 3 "" H 2700 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C11
+L C_Small C11
 U 1 1 5AA04596
 P 2700 2600
 F 0 "C11" H 2710 2670 50  0000 L CNN
@@ -81,7 +179,7 @@ F 3 "" H 2700 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C12
+L C_Small C12
 U 1 1 5AA0483D
 P 2950 2600
 F 0 "C12" H 2960 2670 50  0000 L CNN
@@ -92,7 +190,7 @@ F 3 "" H 2950 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR065
+L GND #PWR065
 U 1 1 5AA04B51
 P 2700 2700
 F 0 "#PWR065" H 2700 2450 50  0001 C CNN
@@ -103,7 +201,7 @@ F 3 "" H 2700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR066
+L GND #PWR066
 U 1 1 5AA04B78
 P 2950 2700
 F 0 "#PWR066" H 2950 2450 50  0001 C CNN
@@ -114,7 +212,7 @@ F 3 "" H 2950 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR067
+L GND #PWR067
 U 1 1 5AA04B98
 P 3450 2700
 F 0 "#PWR067" H 3450 2450 50  0001 C CNN
@@ -125,7 +223,7 @@ F 3 "" H 3450 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR068
+L GND #PWR068
 U 1 1 5AA04BB8
 P 3700 2700
 F 0 "#PWR068" H 3700 2450 50  0001 C CNN
@@ -136,7 +234,7 @@ F 3 "" H 3700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR069
+L GND #PWR069
 U 1 1 5AA04BD8
 P 3950 2700
 F 0 "#PWR069" H 3950 2450 50  0001 C CNN
@@ -147,7 +245,7 @@ F 3 "" H 3950 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C16
+L C_Small C16
 U 1 1 5AA04E29
 P 4600 2350
 F 0 "C16" V 4400 2300 50  0000 L CNN
@@ -158,7 +256,7 @@ F 3 "" H 4600 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR070
+L GND #PWR070
 U 1 1 5AA0515A
 P 4400 5150
 F 0 "#PWR070" H 4400 4900 50  0001 C CNN
@@ -169,7 +267,7 @@ F 3 "" H 4400 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:PCM5141 U6
+L PCM5141 U6
 U 1 1 5AA055B5
 P 4400 3900
 F 0 "U6" H 4400 3900 60  0000 C CNN
@@ -180,7 +278,7 @@ F 3 "" H 4400 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C18
+L C_Small C18
 U 1 1 5AA0593D
 P 5950 3450
 F 0 "C18" H 5960 3520 50  0000 L CNN
@@ -191,7 +289,7 @@ F 3 "" H 5950 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C17
+L C_Small C17
 U 1 1 5AA059CE
 P 5800 3450
 F 0 "C17" H 5810 3520 50  0000 L CNN
@@ -202,7 +300,7 @@ F 3 "" H 5800 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR071
+L GND #PWR071
 U 1 1 5AA05C55
 P 5800 3550
 F 0 "#PWR071" H 5800 3300 50  0001 C CNN
@@ -213,7 +311,7 @@ F 3 "" H 5800 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR072
+L GND #PWR072
 U 1 1 5AA05C7E
 P 5950 3550
 F 0 "#PWR072" H 5950 3300 50  0001 C CNN
@@ -224,7 +322,7 @@ F 3 "" H 5950 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R13
+L R_Small R13
 U 1 1 5AA05F2B
 P 6650 3800
 F 0 "R13" V 6550 3650 50  0000 L CNN
@@ -235,7 +333,7 @@ F 3 "" H 6650 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C20
+L C_Small C20
 U 1 1 5AA060A7
 P 7150 4150
 F 0 "C20" H 7160 4220 50  0000 L CNN
@@ -246,7 +344,7 @@ F 3 "" H 7150 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R14
+L R_Small R14
 U 1 1 5AA06208
 P 6650 4000
 F 0 "R14" V 6550 3850 50  0000 L CNN
@@ -257,7 +355,7 @@ F 3 "" H 6650 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C19
+L C_Small C19
 U 1 1 5AA0620E
 P 6950 4150
 F 0 "C19" H 6960 4220 50  0000 L CNN
@@ -268,7 +366,7 @@ F 3 "" H 6950 4150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR073
+L GND #PWR073
 U 1 1 5AA0645F
 P 6950 4250
 F 0 "#PWR073" H 6950 4000 50  0001 C CNN
@@ -279,7 +377,7 @@ F 3 "" H 6950 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR074
+L GND #PWR074
 U 1 1 5AA06494
 P 7150 4250
 F 0 "#PWR074" H 7150 4000 50  0001 C CNN
@@ -290,7 +388,7 @@ F 3 "" H 7150 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR075
+L GND #PWR075
 U 1 1 5AA06BE8
 P 8650 4400
 F 0 "#PWR075" H 8650 4150 50  0001 C CNN
@@ -305,7 +403,7 @@ Using I2C mode : MODE1 = L ; MODE2 = H\n7-bit I2C address : 0x4C (ADR1 = ADR2 = 
 Text Notes 8800 4600 0    60   ~ 0
 Mini-jack Line out\n2VRMS
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR076
+L GND #PWR076
 U 1 1 5AA07C48
 P 3000 3250
 F 0 "#PWR076" H 3000 3000 50  0001 C CNN
@@ -324,7 +422,7 @@ NoConn ~ 5500 4400
 NoConn ~ 5500 4300
 NoConn ~ 5500 4600
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR077
+L GND #PWR077
 U 1 1 5AA089B3
 P 3100 4000
 F 0 "#PWR077" H 3100 3750 50  0001 C CNN
@@ -335,7 +433,7 @@ F 3 "" H 3100 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:+3.3V #PWR078
+L +3.3V #PWR078
 U 1 1 5AA08AB2
 P 2950 4150
 F 0 "#PWR078" H 2950 4000 50  0001 C CNN
@@ -350,7 +448,7 @@ I2S interface (3-Wire)
 Text Notes 1500 4350 0    60   ~ 0
 I2C interface
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR079
+L GND #PWR079
 U 1 1 5AA093EE
 P 3250 4650
 F 0 "#PWR079" H 3250 4400 50  0001 C CNN
@@ -369,7 +467,7 @@ I2S_DIN
 Text HLabel 2750 3900 0    60   Input ~ 0
 I2S_LRCK
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR080
+L GND #PWR080
 U 1 1 5AA2F720
 P 2150 3800
 F 0 "#PWR080" H 2150 3550 50  0001 C CNN
@@ -495,7 +593,7 @@ AUDIO_L
 Text Label 7700 4000 2    60   ~ 0
 AUDIO_R
 $Comp
-L KXKM_audio_battery_module-rescue:Conn_01x05 J9
+L Conn_01x05 J9
 U 1 1 5AA7A051
 P 8350 3800
 F 0 "J9" H 8350 4100 50  0000 C CNN
@@ -512,7 +610,7 @@ Wire Wire Line
 	7750 4000 7750 4600
 Connection ~ 7750 4000
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR081
+L GND #PWR081
 U 1 1 5AA7A385
 P 8050 4150
 F 0 "#PWR081" H 8050 3900 50  0001 C CNN
@@ -530,7 +628,7 @@ Wire Wire Line
 	8050 3700 8150 3700
 Connection ~ 8050 3900
 $Comp
-L KXKM_audio_battery_module-rescue:+VSW #PWR082
+L +VSW #PWR082
 U 1 1 5AA7B178
 P 7900 3200
 F 0 "#PWR082" H 7900 3050 50  0001 C CNN
@@ -547,7 +645,7 @@ Wire Wire Line
 Text Notes 8450 3850 0    60   ~ 0
 Power amp module connector
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C25
+L C_Small C25
 U 1 1 5AA7C3EA
 P 7900 3400
 F 0 "C25" H 7910 3470 50  0000 L CNN
@@ -558,7 +656,7 @@ F 3 "" H 7900 3400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR083
+L GND #PWR083
 U 1 1 5AA7C466
 P 7900 3500
 F 0 "#PWR083" H 7900 3250 50  0001 C CNN

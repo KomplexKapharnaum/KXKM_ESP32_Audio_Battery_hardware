@@ -1,71 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# KXKM_audio_battery_module-rescue_+3.3V
+# Audio-Jack-3
 #
-DEF KXKM_audio_battery_module-rescue_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_+5V
-#
-DEF KXKM_audio_battery_module-rescue_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_+BATT
-#
-DEF KXKM_audio_battery_module-rescue_+BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_+BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_+VSW
-#
-DEF KXKM_audio_battery_module-rescue_+VSW #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_+VSW" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +VSW 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_Audio-Jack-3
-#
-DEF KXKM_audio_battery_module-rescue_Audio-Jack-3 J 0 40 Y Y 1 F N
+DEF Audio-Jack-3 J 0 40 Y Y 1 F N
 F0 "J" -50 175 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Audio-Jack-3" 100 -70 50 H V C CNN
+F1 "Audio-Jack-3" 100 -70 50 H V C CNN
 F2 "" 250 100 50 H I C CNN
 F3 "" 250 100 50 H I C CNN
 DRAW
@@ -81,11 +21,11 @@ X ~ 3 -200 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_BTS50080-1TEA
+# BTS50080-1TEA
 #
-DEF KXKM_audio_battery_module-rescue_BTS50080-1TEA U 0 40 Y Y 1 F N
+DEF BTS50080-1TEA U 0 40 Y Y 1 F N
 F0 "U" -300 350 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_BTS50080-1TEA" 350 350 50 H V C CNN
+F1 "BTS50080-1TEA" 350 350 50 H V C CNN
 F2 "TO_SOT_Packages_SMD:TO-252-5-11" 0 -400 50 H I C CNN
 F3 "" 0 -400 50 H I C CNN
 $FPLIST
@@ -101,11 +41,11 @@ X Vbb 6 0 400 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_CP1_Small
+# CP1_Small
 #
-DEF KXKM_audio_battery_module-rescue_CP1_Small C 0 10 N N 1 F N
+DEF CP1_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_CP1_Small" 10 -80 50 H V L CNN
+F1 "CP1_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -121,11 +61,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_C_Small
+# C_Small
 #
-DEF KXKM_audio_battery_module-rescue_C_Small C 0 10 N N 1 F N
+DEF C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_C_Small" 10 -80 50 H V L CNN
+F1 "C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -139,11 +79,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Conn_01x02
+# Conn_01x02
 #
-DEF KXKM_audio_battery_module-rescue_Conn_01x02 J 0 40 Y N 1 F N
+DEF Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Conn_01x02" 0 -200 50 H V C CNN
+F1 "Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -163,11 +103,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Conn_01x03
+# Conn_01x03
 #
-DEF KXKM_audio_battery_module-rescue_Conn_01x03 J 0 40 Y N 1 F N
+DEF Conn_01x03 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Conn_01x03" 0 -200 50 H V C CNN
+F1 "Conn_01x03" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -189,11 +129,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Conn_01x04
+# Conn_01x04
 #
-DEF KXKM_audio_battery_module-rescue_Conn_01x04 J 0 40 Y N 1 F N
+DEF Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Conn_01x04" 0 -300 50 H V C CNN
+F1 "Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -217,11 +157,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Conn_01x05
+# Conn_01x05
 #
-DEF KXKM_audio_battery_module-rescue_Conn_01x05 J 0 40 Y N 1 F N
+DEF Conn_01x05 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Conn_01x05" 0 -300 50 H V C CNN
+F1 "Conn_01x05" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -247,11 +187,11 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Conn_01x06
+# Conn_01x06
 #
-DEF KXKM_audio_battery_module-rescue_Conn_01x06 J 0 40 Y N 1 F N
+DEF Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Conn_01x06" 0 -400 50 H V C CNN
+F1 "Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -279,11 +219,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_DC_DC_POL
+# DC_DC_POL
 #
-DEF KXKM_audio_battery_module-rescue_DC_DC_POL U 0 40 Y Y 1 F N
+DEF DC_DC_POL U 0 40 Y Y 1 F N
 F0 "U" 0 -50 60 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_DC_DC_POL" 0 50 39 H V C CNN
+F1 "DC_DC_POL" 0 50 39 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -295,11 +235,11 @@ X OUT+ 4 650 50 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_D_Schottky_Small
+# D_Schottky_Small
 #
-DEF KXKM_audio_battery_module-rescue_D_Schottky_Small D 0 10 N N 1 F N
+DEF D_Schottky_Small D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_D_Schottky_Small" -280 -80 50 H V L CNN
+F1 "D_Schottky_Small" -280 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -320,11 +260,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_D_Schottky_x2_KCom_AAK
+# D_Schottky_x2_KCom_AAK
 #
-DEF KXKM_audio_battery_module-rescue_D_Schottky_x2_KCom_AAK D 0 30 Y N 1 F N
+DEF D_Schottky_x2_KCom_AAK D 0 30 Y N 1 F N
 F0 "D" 50 -100 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_D_Schottky_x2_KCom_AAK" 0 100 50 H V C CNN
+F1 "D_Schottky_x2_KCom_AAK" 0 100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -344,11 +284,11 @@ X K 3 0 -200 100 U 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_D_Zener_Small
+# D_Zener_Small
 #
-DEF KXKM_audio_battery_module-rescue_D_Zener_Small D 0 10 N N 1 F N
+DEF D_Zener_Small D 0 10 N N 1 F N
 F0 "D" 0 90 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_D_Zener_Small" 0 -90 50 H V C CNN
+F1 "D_Zener_Small" 0 -90 50 H V C CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -367,11 +307,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_ESP32-WROOM
+# ESP32-WROOM
 #
-DEF KXKM_audio_battery_module-rescue_ESP32-WROOM U 0 40 Y Y 1 L N
+DEF ESP32-WROOM U 0 40 Y Y 1 L N
 F0 "U" 150 250 60 H V R CNN
-F1 "KXKM_audio_battery_module-rescue_ESP32-WROOM" 150 150 60 H V R CNN
+F1 "ESP32-WROOM" 150 150 60 H V R CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -418,11 +358,11 @@ X IO33 9 0 -800 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_FDG1024NZ
+# FDG1024NZ
 #
-DEF KXKM_audio_battery_module-rescue_FDG1024NZ Q 0 0 Y N 2 F N
+DEF FDG1024NZ Q 0 0 Y N 2 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_FDG1024NZ" 200 0 50 H V L CNN
+F1 "FDG1024NZ" 200 0 50 H V L CNN
 F2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -454,24 +394,11 @@ X G 5 -200 -50 200 R 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_GND
+# Jumper_NO_Small
 #
-DEF KXKM_audio_battery_module-rescue_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_Jumper_NO_Small
-#
-DEF KXKM_audio_battery_module-rescue_Jumper_NO_Small JP 0 30 N N 1 F N
+DEF Jumper_NO_Small JP 0 30 N N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Jumper_NO_Small" 10 -60 50 H V C CNN
+F1 "Jumper_NO_Small" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -482,11 +409,11 @@ X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_LED_Small
+# LED_Small
 #
-DEF KXKM_audio_battery_module-rescue_LED_Small D 0 10 N N 1 F N
+DEF LED_Small D 0 10 N N 1 F N
 F0 "D" -50 125 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_LED_Small" -175 -100 50 H V L CNN
+F1 "LED_Small" -175 -100 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -504,11 +431,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_L_Small
+# L_Small
 #
-DEF KXKM_audio_battery_module-rescue_L_Small L 0 10 N N 1 F N
+DEF L_Small L 0 10 N N 1 F N
 F0 "L" 30 40 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_L_Small" 30 -40 50 H V L CNN
+F1 "L_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -527,11 +454,11 @@ X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_MCP16301H
+# MCP16301H
 #
-DEF KXKM_audio_battery_module-rescue_MCP16301H U 0 40 Y Y 1 F N
+DEF MCP16301H U 0 40 Y Y 1 F N
 F0 "U" -300 550 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_MCP16301H" -300 450 50 H V L CNN
+F1 "MCP16301H" -300 450 50 H V L CNN
 F2 "TO_SOT_Packages_SMD:SOT-23-6" 0 -500 50 H I C CNN
 F3 "" -300 550 50 H I C CNN
 $FPLIST
@@ -548,11 +475,11 @@ X SW 6 400 200 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Micro_SD_Card
+# Micro_SD_Card
 #
-DEF KXKM_audio_battery_module-rescue_Micro_SD_Card J 0 40 Y Y 1 F N
+DEF Micro_SD_Card J 0 40 Y Y 1 F N
 F0 "J" -650 600 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Micro_SD_Card" 650 600 50 H V R CNN
+F1 "Micro_SD_Card" 650 600 50 H V R CNN
 F2 "" 1150 300 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -578,11 +505,11 @@ X SHIELD 9 800 -600 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_Mounting_Hole
+# Mounting_Hole
 #
-DEF KXKM_audio_battery_module-rescue_Mounting_Hole MK 0 40 Y Y 1 F N
+DEF Mounting_Hole MK 0 40 Y Y 1 F N
 F0 "MK" 0 200 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_Mounting_Hole" 0 125 50 H V C CNN
+F1 "Mounting_Hole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -594,11 +521,11 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_PCM5141
+# PCM5141
 #
-DEF KXKM_audio_battery_module-rescue_PCM5141 U 0 40 Y Y 1 F N
+DEF PCM5141 U 0 40 Y Y 1 F N
 F0 "U" 0 0 60 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_PCM5141" 0 -100 60 H V C CNN
+F1 "PCM5141" 0 -100 60 H V C CNN
 F2 "Housings_SSOP:TSSOP-28_4.4x9.7mm_Pitch0.65mm" -100 200 60 H I C CNN
 F3 "" 0 300 60 H I C CNN
 $FPLIST
@@ -637,24 +564,11 @@ X AGND 9 0 -1150 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_PWR_FLAG
+# R_Pack04
 #
-DEF KXKM_audio_battery_module-rescue_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_R_Pack04
-#
-DEF KXKM_audio_battery_module-rescue_R_Pack04 RN 0 0 Y N 1 F N
+DEF R_Pack04 RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "KXKM_audio_battery_module-rescue_R_Pack04" 200 0 50 V V C CNN
+F1 "R_Pack04" 200 0 50 V V C CNN
 F2 "" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -686,11 +600,11 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_R_Pack04_Unit
+# R_Pack04_Unit
 #
-DEF KXKM_audio_battery_module-rescue_R_Pack04_Unit RN 0 10 N N 4 F N
+DEF R_Pack04_Unit RN 0 10 N N 4 F N
 F0 "RN" 30 20 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_R_Pack04_Unit" 30 -40 50 H V L CNN
+F1 "R_Pack04_Unit" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -709,11 +623,11 @@ X ~ 5 0 -100 30 U 50 50 4 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_R_Small
+# R_Small
 #
-DEF KXKM_audio_battery_module-rescue_R_Small R 0 10 N N 1 F N
+DEF R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_R_Small" 30 -40 50 H V L CNN
+F1 "R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -726,11 +640,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_SP3485CN
+# SP3485CN
 #
-DEF KXKM_audio_battery_module-rescue_SP3485CN U 0 40 Y Y 1 F N
+DEF SP3485CN U 0 40 Y Y 1 F N
 F0 "U" -300 350 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_SP3485CN" 100 350 50 H V L CNN
+F1 "SP3485CN" 100 350 50 H V L CNN
 F2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" 1050 -350 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -749,11 +663,11 @@ X VCC 8 0 400 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_STM32F030F4Px
+# STM32F030F4Px
 #
-DEF KXKM_audio_battery_module-rescue_STM32F030F4Px U 0 50 Y Y 1 F N
+DEF STM32F030F4Px U 0 50 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_STM32F030F4Px" 0 -100 50 H V C CNN
+F1 "STM32F030F4Px" 0 -100 50 H V C CNN
 F2 "TSSOP20" 0 -200 50 H V C CIN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -781,11 +695,11 @@ X PA3/ADC_IN3/USART1_RX 9 -3200 800 300 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_SW_Push
+# SW_Push
 #
-DEF KXKM_audio_battery_module-rescue_SW_Push SW 0 40 N N 1 F N
+DEF SW_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "KXKM_audio_battery_module-rescue_SW_Push" 0 -60 50 H V C CNN
+F1 "SW_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -798,11 +712,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_SW_SP3T
+# SW_SP3T
 #
-DEF KXKM_audio_battery_module-rescue_SW_SP3T SW 0 0 Y N 1 F N
+DEF SW_SP3T SW 0 0 Y N 1 F N
 F0 "SW" 0 200 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_SW_SP3T" 0 -200 50 H V C CNN
+F1 "SW_SP3T" 0 -200 50 H V C CNN
 F2 "" -625 175 50 H I C CNN
 F3 "" -625 175 50 H I C CNN
 $FPLIST
@@ -822,11 +736,11 @@ X 4 4 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_TC_SWD
+# TC_SWD
 #
-DEF KXKM_audio_battery_module-rescue_TC_SWD P 0 40 Y Y 1 F N
+DEF TC_SWD P 0 40 Y Y 1 F N
 F0 "P" -250 200 60 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_TC_SWD" -150 -200 60 H V C CNN
+F1 "TC_SWD" -150 -200 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -840,11 +754,11 @@ X SWO 6 600 -100 300 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_TEST_1P
+# TEST_1P
 #
-DEF KXKM_audio_battery_module-rescue_TEST_1P J 0 30 N N 1 F N
+DEF TEST_1P J 0 30 N N 1 F N
 F0 "J" 0 270 50 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_TEST_1P" 0 200 50 H V C CNN
+F1 "TEST_1P" 0 200 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 DRAW
@@ -853,26 +767,11 @@ X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KXKM_audio_battery_module-rescue_VBUS
+# mikroBUS_socket
 #
-DEF KXKM_audio_battery_module-rescue_VBUS #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "KXKM_audio_battery_module-rescue_VBUS" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X VBUS 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# KXKM_audio_battery_module-rescue_mikroBUS_socket
-#
-DEF KXKM_audio_battery_module-rescue_mikroBUS_socket J 0 40 Y Y 1 F N
+DEF mikroBUS_socket J 0 40 Y Y 1 F N
 F0 "J" 0 0 60 H V C CNN
-F1 "KXKM_audio_battery_module-rescue_mikroBUS_socket" 0 500 60 H V C CNN
+F1 "mikroBUS_socket" 0 500 60 H V C CNN
 F2 "tom_kicad_lib:MIKROBUS_HOST_CONN" -100 -100 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
