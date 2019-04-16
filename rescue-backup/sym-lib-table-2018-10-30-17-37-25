@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name KXKM_audio_battery_module-rescue)(type Legacy)(uri ${KIPRJMOD}/KXKM_audio_battery_module-rescue.lib)(options "")(descr ""))
-)

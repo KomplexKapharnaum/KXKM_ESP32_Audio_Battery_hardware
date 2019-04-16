@@ -1,8 +1,10 @@
 
 # Created by https://www.gitignore.io/api/kicad,linux
+# Edit at https://www.gitignore.io/?templates=kicad,linux
 
 ### KiCad ###
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
+# Format documentation: http://kicad-pcb.org/help/file-formats/
 
 # Temporary files
 *.000
@@ -12,6 +14,9 @@
 *~
 _autosave-*
 *.tmp
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -23,6 +28,15 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+### KiCad Patch ###
+rescue-backup/
+
+*.tsv
+bom/
+
+# Gerber export output
+out/
 
 ### Linux ###
 
@@ -37,7 +51,6 @@ _autosave-*
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
 
 # End of https://www.gitignore.io/api/kicad,linux
 

@@ -1,0 +1,8 @@
+### Module positions - created on mar. 16 avril 2019 15:56:07 CEST ###
+### Printed by Pcbnew version kicad 5.1.0
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                  Package                                   PosX       PosY       Rot  Side
+J3        Conn_02x10_Odd_Even  PinSocket_2x10_P2.54mm_Vertical_SMD    35.2500    13.2500  180.0000  top
+U3        Audio_amp_OEP30W     Audio_amp_OEP30W                       20.5000    20.2500  270.0000  top
+## End
