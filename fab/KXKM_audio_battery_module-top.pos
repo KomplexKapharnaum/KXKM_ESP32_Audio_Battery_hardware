@@ -1,0 +1,22 @@
+### Module positions - created on mar. 16 avril 2019 15:44:07 CEST ###
+### Printed by Pcbnew version kicad 5.1.0
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                  Package                                   PosX       PosY       Rot  Side
+C6        100uF,50V            CP_Elec_8x10                           51.2500    11.7500   90.0000  top
+D5        Green                LED_0603_1608Metric                     5.2000    56.2500  180.0000  top
+D6        Green                LED_0603_1608Metric                     8.1000    56.2500  180.0000  top
+D7        Green                LED_0603_1608Metric                    11.0000    56.2500  180.0000  top
+D8        Yellow               LED_0603_1608Metric                    13.9000    56.2500  180.0000  top
+D9        Yellow               LED_0603_1608Metric                    16.8000    56.2500  180.0000  top
+D10       Red                  LED_0603_1608Metric                    19.7000    56.2500  180.0000  top
+FID1      Fiducial             Fiducial_0.5mm_Mask1mm                  0.7500     0.7500    0.0000  top
+FID2      Fiducial             Fiducial_0.5mm_Mask1mm                 55.7500     0.7500    0.0000  top
+FID3      Fiducial             Fiducial_0.5mm_Mask1mm                  0.5000    57.0000    0.0000  top
+J3        Conn_02x10_Odd_Even  PinSocket_2x10_P2.54mm_Vertical_SMD    42.2500    26.2500  180.0000  top
+J5        Micro_SD_Card        microSD-Receptacle-SelfEject           29.5000    53.5000  180.0000  top
+L1        15uH,1.5A            L_Taiyo-Yuden_NR-50xx                  41.5000    53.0000  180.0000  top
+SW1       SW_Push              SW_SPST_KMR2                            7.2000    44.8000    0.0000  top
+SW4       SW_SP3T              SW_SP3T_PCM13                          13.7500    50.7500  180.0000  top
+U1        ESP32-WROOM          ESP32-WROOM-32                         23.0050    29.0000   90.0000  top
+## End

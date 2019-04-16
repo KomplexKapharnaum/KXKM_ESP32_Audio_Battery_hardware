@@ -1,5 +1,2 @@
 (fp_lib_table
-  (lib (name MIKROBUS_HOST_CONN)(type Legacy)(uri /home/tom/Dropbox/kicad/mikroBus/MIKROBUS_HOST_CONN.mod)(options "")(descr ""))
-  (lib (name MIKROE_CLICK)(type Legacy)(uri /home/tom/Dropbox/kicad/mikroBus/MIKROE_CLICK.mod)(options "")(descr ""))
-  (lib (name ESP32-footprints-Lib)(type KiCad)(uri /home/tom/Dropbox/kicad/ESP32-kiCAD-Footprints-master/ESP32-Footprints/ESP32-footprints-Lib.pretty)(options "")(descr ""))
 )
