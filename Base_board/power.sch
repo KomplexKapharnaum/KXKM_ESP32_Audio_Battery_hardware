@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:KXKM_audio_battery_module-cache
+LIBS:KXKM_ESP32_battery_management_board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,7 +19,7 @@ Main battery input\n5.5 - 30VDC
 Text Notes 9650 2000 0    60   ~ 12
 Battery power output.\nMax 10A
 $Comp
-L KXKM_audio_battery_module-rescue:DC_DC_POL U5
+L tom_kicad:DC_DC_POL U5
 U 1 1 5A9FAEA4
 P 8650 2350
 F 0 "U5" H 8650 2300 60  0000 C CNN
@@ -32,7 +32,7 @@ $EndComp
 Text Notes 8100 2750 0    60   ~ 12
 Optional 3A  buck module \nwith USB connector
 $Comp
-L KXKM_audio_battery_module-rescue:SW_Push SW3
+L Switch:SW_Push SW3
 U 1 1 5A9FC5E1
 P 3150 4900
 F 0 "SW3" V 3050 5050 50  0000 L CNN
@@ -43,7 +43,7 @@ F 3 "" H 3150 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR035
+L power:GND #PWR035
 U 1 1 5A9FC90F
 P 2150 1700
 F 0 "#PWR035" H 2150 1450 50  0001 C CNN
@@ -56,7 +56,7 @@ $EndComp
 Text HLabel 4700 1550 0    60   Input ~ 12
 MAIN_OUT_EN
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C5
+L Device:C_Small C5
 U 1 1 5A9FED2B
 P 2000 6800
 F 0 "C5" H 2010 6870 50  0000 L CNN
@@ -67,7 +67,7 @@ F 3 "" H 2000 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C4
+L Device:C_Small C4
 U 1 1 5A9FEE3B
 P 1600 6800
 F 0 "C4" H 1610 6870 50  0000 L CNN
@@ -78,7 +78,7 @@ F 3 "" H 1600 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:+BATT #PWR037
+L power:+BATT #PWR037
 U 1 1 5A9FF065
 P 2800 1250
 F 0 "#PWR037" H 2800 1100 50  0001 C CNN
@@ -89,7 +89,7 @@ F 3 "" H 2800 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR038
+L power:GND #PWR038
 U 1 1 5A9FF120
 P 1600 6900
 F 0 "#PWR038" H 1600 6650 50  0001 C CNN
@@ -100,7 +100,7 @@ F 3 "" H 1600 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR039
+L power:GND #PWR039
 U 1 1 5A9FF156
 P 2000 6900
 F 0 "#PWR039" H 2000 6650 50  0001 C CNN
@@ -111,7 +111,7 @@ F 3 "" H 2000 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C7
+L Device:C_Small C7
 U 1 1 5A9FF342
 P 3800 6600
 F 0 "C7" H 3810 6670 50  0000 L CNN
@@ -122,7 +122,7 @@ F 3 "" H 3800 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:D_Schottky_Small D3
+L Device:D_Schottky_Small D3
 U 1 1 5A9FF573
 P 3800 6850
 F 0 "D3" V 3750 6900 50  0000 L CNN
@@ -133,18 +133,18 @@ F 3 "" V 3800 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR040
+L power:GND #PWR040
 U 1 1 5A9FF8A5
-P 3250 7350
-F 0 "#PWR040" H 3250 7100 50  0001 C CNN
-F 1 "GND" H 3250 7200 50  0000 C CNN
-F 2 "" H 3250 7350 50  0001 C CNN
-F 3 "" H 3250 7350 50  0001 C CNN
-	1    3250 7350
+P 3250 7050
+F 0 "#PWR040" H 3250 6800 50  0001 C CNN
+F 1 "GND" H 3250 6900 50  0000 C CNN
+F 2 "" H 3250 7050 50  0001 C CNN
+F 3 "" H 3250 7050 50  0001 C CNN
+	1    3250 7050
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR041
+L power:GND #PWR041
 U 1 1 5A9FF8DA
 P 3800 6950
 F 0 "#PWR041" H 3800 6700 50  0001 C CNN
@@ -155,18 +155,18 @@ F 3 "" H 3800 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:MCP16301H U3
+L Regulator_Switching:MCP16331CH U3
 U 1 1 5A9FC3B6
-P 3250 6950
-F 0 "U3" H 2950 7500 50  0000 L CNN
-F 1 "MCP16331T-E/CH" H 2950 7400 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3250 6450 50  0001 C CNN
-F 3 "" H 2950 7500 50  0001 C CNN
-	1    3250 6950
+P 3250 6750
+F 0 "U3" H 3200 7100 50  0000 L CNN
+F 1 "MCP16331T-E/CH" H 2900 7000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3250 6250 50  0001 C CNN
+F 3 "" H 2950 7300 50  0001 C CNN
+	1    3250 6750
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:L_Small L1
+L Device:L_Small L1
 U 1 1 5A9FFE27
 P 4300 6750
 F 0 "L1" V 4350 6750 50  0000 L CNN
@@ -177,7 +177,7 @@ F 3 "" H 4300 6750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R9
+L Device:R_Small R9
 U 1 1 5AA004D5
 P 4600 6950
 F 0 "R9" H 4630 6970 50  0000 L CNN
@@ -188,7 +188,7 @@ F 3 "" H 4600 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R10
+L Device:R_Small R10
 U 1 1 5AA0053D
 P 4600 7300
 F 0 "R10" H 4630 7320 50  0000 L CNN
@@ -199,7 +199,7 @@ F 3 "" H 4600 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR042
+L power:GND #PWR042
 U 1 1 5AA00713
 P 4600 7450
 F 0 "#PWR042" H 4600 7200 50  0001 C CNN
@@ -210,7 +210,7 @@ F 3 "" H 4600 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C8
+L Device:C_Small C8
 U 1 1 5AA00938
 P 5100 6950
 F 0 "C8" H 5110 7020 50  0000 L CNN
@@ -221,7 +221,7 @@ F 3 "" H 5100 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C9
+L Device:C_Small C9
 U 1 1 5AA00C46
 P 5500 6950
 F 0 "C9" H 5510 7020 50  0000 L CNN
@@ -232,7 +232,7 @@ F 3 "" H 5500 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C10
+L Device:C_Small C10
 U 1 1 5AA00D4C
 P 5950 6950
 F 0 "C10" H 5960 7020 50  0000 L CNN
@@ -243,7 +243,7 @@ F 3 "" H 5950 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR043
+L power:GND #PWR043
 U 1 1 5AA00DA9
 P 5500 7050
 F 0 "#PWR043" H 5500 6800 50  0001 C CNN
@@ -254,7 +254,7 @@ F 3 "" H 5500 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR044
+L power:GND #PWR044
 U 1 1 5AA00DF3
 P 5950 7050
 F 0 "#PWR044" H 5950 6800 50  0001 C CNN
@@ -265,7 +265,7 @@ F 3 "" H 5950 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:+3.3V #PWR045
+L power:+3.3V #PWR045
 U 1 1 5AA00ECC
 P 5950 6700
 F 0 "#PWR045" H 5950 6550 50  0001 C CNN
@@ -278,7 +278,7 @@ $EndComp
 Text HLabel 2000 5450 0    60   Input ~ 12
 3.3V_EN
 $Comp
-L KXKM_audio_battery_module-rescue:D_Zener_Small D2
+L Device:D_Zener_Small D2
 U 1 1 5AA028CA
 P 3150 5600
 F 0 "D2" V 3100 5700 50  0000 C CNN
@@ -289,7 +289,7 @@ F 3 "" V 3150 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R8
+L Device:R_Small R8
 U 1 1 5AA0358A
 P 3150 5250
 F 0 "R8" H 3180 5270 50  0000 L CNN
@@ -300,7 +300,7 @@ F 3 "" H 3150 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR047
+L power:GND #PWR047
 U 1 1 5AA037A6
 P 3150 5700
 F 0 "#PWR047" H 3150 5450 50  0001 C CNN
@@ -315,7 +315,7 @@ EN_PUSH_BUTTON
 Text Notes 4300 6250 0    60   ~ 12
 The MCP16331 has an internal pull up on the EN pin.\n\nOn startup, R1 pulls EN low (system Off)\n\nWhen the push button is pressed, the Zener is powered and \nthe EN pin gets high through D1 => system On.\n\nThe uC gets powered and can now controls the system state \nwith the 3.3V_EN line.\nIt can also monitor future states of the push button.
 $Comp
-L KXKM_audio_battery_module-rescue:VBUS #PWR048
+L power:VBUS #PWR048
 U 1 1 5AA2DF17
 P 9400 2200
 F 0 "#PWR048" H 9400 2050 50  0001 C CNN
@@ -326,7 +326,7 @@ F 3 "" H 9400 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:CP1_Small C6
+L Device:CP1_Small C6
 U 1 1 5AA2FD90
 P 2150 1500
 F 0 "C6" H 2160 1570 50  0000 L CNN
@@ -337,7 +337,7 @@ F 3 "" H 2150 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR051
+L power:GND #PWR051
 U 1 1 5AA32CAF
 P 9400 1650
 F 0 "#PWR051" H 9400 1400 50  0001 C CNN
@@ -348,7 +348,7 @@ F 3 "" H 9400 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR052
+L power:GND #PWR052
 U 1 1 5AA32D09
 P 9400 2600
 F 0 "#PWR052" H 9400 2350 50  0001 C CNN
@@ -361,7 +361,7 @@ $EndComp
 Text Notes 5250 2350 0    60   ~ 12
 10A high side load switch
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR053
+L power:GND #PWR053
 U 1 1 5AA356E4
 P 5150 1800
 F 0 "#PWR053" H 5150 1550 50  0001 C CNN
@@ -372,7 +372,7 @@ F 3 "" H 5150 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR054
+L power:GND #PWR054
 U 1 1 5AA35B5B
 P 4800 1800
 F 0 "#PWR054" H 4800 1550 50  0001 C CNN
@@ -383,7 +383,7 @@ F 3 "" H 4800 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R12
+L Device:R_Small R12
 U 1 1 5AA35ECE
 P 6800 2150
 F 0 "R12" H 6742 2104 50  0000 R CNN
@@ -394,7 +394,7 @@ F 3 "" H 6800 2150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR055
+L power:GND #PWR055
 U 1 1 5AA35FB7
 P 6800 2500
 F 0 "#PWR055" H 6800 2250 50  0001 C CNN
@@ -407,7 +407,7 @@ $EndComp
 Text HLabel 7100 1900 2    60   Output ~ 12
 LOAD_I_SENSE
 $Comp
-L KXKM_audio_battery_module-rescue:PWR_FLAG #FLG057
+L power:PWR_FLAG #FLG057
 U 1 1 5AA444FE
 P 6300 6700
 F 0 "#FLG057" H 6300 6775 50  0001 C CNN
@@ -420,7 +420,7 @@ $EndComp
 Text Notes 650  5150 0    60   ~ 12
 R8 selection :\nZener current : 5mA min, 100mA max \n470R : \n    5mA with VBat = 5.5V\n    57mA with VBat = 30V
 $Comp
-L KXKM_audio_battery_module-rescue:+VSW #PWR062
+L power:+VSW #PWR062
 U 1 1 5AA7A913
 P 7900 1300
 F 0 "#PWR062" H 7900 1150 50  0001 C CNN
@@ -444,10 +444,6 @@ Wire Wire Line
 	9400 2400 9400 2550
 Wire Wire Line
 	2000 6650 2000 6700
-Wire Wire Line
-	3650 6950 3700 6950
-Wire Wire Line
-	3700 6950 3700 7150
 Wire Wire Line
 	3700 7150 4600 7150
 Wire Wire Line
@@ -526,7 +522,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 2400 9400 2400
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R1
+L Device:R_Small R1
 U 1 1 5AAAA24E
 P 2500 6950
 F 0 "R1" H 2530 6970 50  0000 L CNN
@@ -537,7 +533,7 @@ F 3 "" H 2500 6950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR063
+L power:GND #PWR063
 U 1 1 5AAAA2EA
 P 2500 7050
 F 0 "#PWR063" H 2500 6800 50  0001 C CNN
@@ -653,7 +649,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1350 2800 1400
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR0101
+L power:GND #PWR0101
 U 1 1 5C6E6168
 P 2800 1700
 F 0 "#PWR0101" H 2800 1450 50  0001 C CNN
@@ -665,7 +661,7 @@ F 3 "" H 2800 1700 50  0001 C CNN
 $EndComp
 Connection ~ 2800 1350
 $Comp
-L KXKM_audio_battery_module-rescue:C_Small C26
+L Device:C_Small C26
 U 1 1 5C712B7A
 P 2650 6950
 F 0 "C26" H 2660 7020 50  0000 L CNN
@@ -676,7 +672,7 @@ F 3 "" H 2650 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR0106
+L power:GND #PWR0106
 U 1 1 5C717150
 P 2650 7050
 F 0 "#PWR0106" H 2650 6800 50  0001 C CNN
@@ -756,7 +752,7 @@ Wire Wire Line
 Text Notes 4850 3150 0    60   ~ 12
 R_IS selection : I_IS = 6mA max\nIn normal conditions, I_IS = I_load / 10000\n=> with R_IS = 2k, I_load = 10A gives 2V. \nThe Zener clamps voltage to 3V (error conditions => I_IS = 5.2mA)
 $Comp
-L KXKM_audio_battery_module-rescue:D_Zener_Small D13
+L Device:D_Zener_Small D13
 U 1 1 5C7A51DB
 P 7050 2150
 F 0 "D13" V 7000 2250 50  0000 C CNN
@@ -774,7 +770,7 @@ Connection ~ 7050 1900
 Wire Wire Line
 	7050 1900 7100 1900
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR0107
+L power:GND #PWR0107
 U 1 1 5C7A9F58
 P 7050 2250
 F 0 "#PWR0107" H 7050 2000 50  0001 C CNN
@@ -785,7 +781,7 @@ F 3 "" H 7050 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:R_Small R22
+L Device:R_Small R22
 U 1 1 5C7B3CFC
 P 6800 2350
 F 0 "R22" H 6742 2304 50  0000 R CNN
@@ -809,7 +805,7 @@ F 3 " ~" H 9950 3950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR0102
+L power:GND #PWR0102
 U 1 1 5C7F26AF
 P 9800 4400
 F 0 "#PWR0102" H 9800 4150 50  0001 C CNN
@@ -820,7 +816,7 @@ F 3 "" H 9800 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR0105
+L power:GND #PWR0105
 U 1 1 5C7F2704
 P 9900 4400
 F 0 "#PWR0105" H 9900 4150 50  0001 C CNN
@@ -838,7 +834,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 1650 2150 1650
 $Comp
-L KXKM_audio_battery_module-rescue:+BATT #PWR046
+L power:+BATT #PWR046
 U 1 1 5AA027F2
 P 3150 4600
 F 0 "#PWR046" H 3150 4450 50  0001 C CNN
@@ -859,7 +855,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 900  6350 900 
 $Comp
-L KXKM_audio_battery_module-rescue:+BATT #PWR0108
+L power:+BATT #PWR0108
 U 1 1 5CD9FDB2
 P 1600 6600
 F 0 "#PWR0108" H 1600 6450 50  0001 C CNN
@@ -886,7 +882,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 950  2100 950 
 $Comp
-L KXKM_audio_battery_module-rescue:PWR_FLAG #FLG0101
+L power:PWR_FLAG #FLG0101
 U 1 1 5CDEEF8F
 P 2150 900
 F 0 "#FLG0101" H 2150 975 50  0001 C CNN
@@ -919,7 +915,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 1500 5950 1900
 $Comp
-L KXKM_audio_battery_module-rescue:+BATT #PWR061
+L power:+BATT #PWR061
 U 1 1 5AA46EC2
 P 10350 6200
 F 0 "#PWR061" H 10350 6050 50  0001 C CNN
@@ -930,7 +926,7 @@ F 3 "" H 10350 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:PWR_FLAG #FLG060
+L power:PWR_FLAG #FLG060
 U 1 1 5AA46E7F
 P 10350 6200
 F 0 "#FLG060" H 10350 6275 50  0001 C CNN
@@ -962,7 +958,7 @@ USB power output
 Text Notes 8000 5350 0    60   ~ 0
 For most newer devices, a 0R resistor between D+ and D-\nshould be enough to indicate that the port can supply up to 1.5A.\n\nOlder Apple devices may need specific voltage dividers \non D+/D- lines.\nCheck https://lygte-info.dk/info/USBinfo%20UK.html
 $Comp
-L KXKM_audio_battery_module-rescue:VBUS #PWR027
+L power:VBUS #PWR027
 U 1 1 5CBCF1C7
 P 9400 3700
 F 0 "#PWR027" H 9400 3550 50  0001 C CNN
@@ -1021,7 +1017,7 @@ F 3 "~" H 8500 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:VBUS #PWR025
+L power:VBUS #PWR025
 U 1 1 5CBD526E
 P 8850 3650
 F 0 "#PWR025" H 8850 3500 50  0001 C CNN
@@ -1032,7 +1028,7 @@ F 3 "" H 8850 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:VBUS #PWR023
+L power:VBUS #PWR023
 U 1 1 5CBD54F6
 P 8500 3650
 F 0 "#PWR023" H 8500 3500 50  0001 C CNN
@@ -1043,7 +1039,7 @@ F 3 "" H 8500 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR026
+L power:GND #PWR026
 U 1 1 5CBD5908
 P 8850 4450
 F 0 "#PWR026" H 8850 4200 50  0001 C CNN
@@ -1054,7 +1050,7 @@ F 3 "" H 8850 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KXKM_audio_battery_module-rescue:GND #PWR024
+L power:GND #PWR024
 U 1 1 5CBD5C75
 P 8500 4450
 F 0 "#PWR024" H 8500 4200 50  0001 C CNN
@@ -1092,4 +1088,8 @@ Wire Wire Line
 Wire Wire Line
 	9400 4100 9400 4200
 Connection ~ 9300 4200
+Wire Wire Line
+	3650 6850 3700 6850
+Wire Wire Line
+	3700 6850 3700 7150
 $EndSCHEMATC
