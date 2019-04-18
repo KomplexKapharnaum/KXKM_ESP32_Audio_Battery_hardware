@@ -20,7 +20,7 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
@@ -1079,7 +1079,7 @@
     (fp_text reference C9 (at 0 1.65 270) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10uF,10V (at 0 -1.65 270) (layer B.Fab) hide
+    (fp_text value 10uF (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
@@ -1253,7 +1253,7 @@
     (fp_text reference R9 (at 0.5 1.43) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 31.6k,1% (at 0 -1.43 270) (layer B.Fab) hide
+    (fp_text value 31.6k/1% (at 0 -1.43 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 270) (layer B.Fab)
@@ -1289,7 +1289,7 @@
     (fp_text reference R10 (at 0 2 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10k,1% (at 0 -1.43 90) (layer B.Fab) hide
+    (fp_text value 10k/1% (at 0 -1.43 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 90) (layer B.Fab)
@@ -1670,7 +1670,7 @@
     (fp_text reference R28 (at -2.5 0 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10k,1% (at 0 -1.43 180) (layer B.Fab) hide
+    (fp_text value 10k/1% (at 0 -1.43 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -1922,7 +1922,7 @@
     (fp_text reference D13 (at 2.75 0 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value Zener,3V,300mW (at 0.1 -1.9 180) (layer B.Fab) hide
+    (fp_text value Zener/3V/300mW (at 0.1 -1.9 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 1.85 180) (layer B.Fab) hide
@@ -2186,7 +2186,7 @@
     (fp_text reference R22 (at 0 2) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 1k,1% (at 0 -1.43 270) (layer B.Fab) hide
+    (fp_text value 1k/1% (at 0 -1.43 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -2439,7 +2439,7 @@
     (fp_text reference D3 (at 0 2.5 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 100V,1A (at 0 -2.6 180) (layer B.Fab) hide
+    (fp_text value 1A/100V (at 0 -2.6 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 2.5 180) (layer B.Fab)
@@ -2736,7 +2736,7 @@
     )
   )
 
-  (module Button_Switch_SMD:SW_SP3T_PCM13 (layer F.Cu) (tedit 5CAE179B) (tstamp 5C8FB6B5)
+  (module Button_Switch_SMD:SW_SP3T_PCM13 (layer F.Cu) (tedit 5CB8A06A) (tstamp 5C8FB6B5)
     (at 116.75 87.25 180)
     (descr "Ultraminiature Surface Mount Slide Switch")
     (path /5A8A8B6C/5A8ABB36)
@@ -3111,7 +3111,7 @@
     (fp_text reference C10 (at -2.5 0) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10uF,10V (at 0 -1.65) (layer B.Fab) hide
+    (fp_text value 10uF (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0) (layer B.Fab)
@@ -3148,7 +3148,7 @@
     (fp_text reference C5 (at 0 1.82 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10uF,50V (at 0 -1.82 180) (layer B.Fab) hide
+    (fp_text value 10uF/50V (at 0 -1.82 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -1.6 -0.8) (end -1.6 0.8) (layer B.Fab) (width 0.1))
@@ -3185,7 +3185,7 @@
     (fp_text reference C4 (at 0 1.82 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10uF,50V (at 0 -1.82 180) (layer B.Fab) hide
+    (fp_text value 10uF/50V (at 0 -1.82 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 180) (layer B.Fab)
@@ -3314,7 +3314,7 @@
     (fp_text reference D2 (at 0 1.85 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value Zener,3V,300mW (at 0.1 -1.9 180) (layer B.Fab) hide
+    (fp_text value Zener/3V/300mW (at 0.1 -1.9 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 1.85 180) (layer B.Fab)
@@ -3796,7 +3796,7 @@
     (fp_text reference R1 (at 0 1.43) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10k,1% (at 0 -1.43 270) (layer B.Fab) hide
+    (fp_text value 10k/1% (at 0 -1.43 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 270) (layer B.Fab)
@@ -3868,7 +3868,7 @@
     (fp_text reference R12 (at 0 2) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 1k,1% (at 0 -1.43 270) (layer B.Fab) hide
+    (fp_text value 1k/1% (at 0 -1.43 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -3904,7 +3904,7 @@
     (fp_text reference R15 (at 2.25 0 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 270k,1% (at 0 -1.43 180) (layer B.Fab) hide
+    (fp_text value 270k/1% (at 0 -1.43 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -3940,7 +3940,7 @@
     (fp_text reference R16 (at -2.25 0) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 31.6k,1% (at 0 -1.43) (layer B.Fab) hide
+    (fp_text value 31.6k/1% (at 0 -1.43) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
@@ -4055,7 +4055,7 @@
     (fp_text reference D11 (at 3.25 0 180) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 100V,1A (at 0 -2.6 90) (layer B.Fab) hide
+    (fp_text value 1A/100V (at 0 -2.6 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 3.25 0 180) (layer B.Fab)
@@ -4098,7 +4098,7 @@
     (fp_text reference F1 (at 0 2.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 30V,0.5A (at 0 -2.65) (layer B.Fab) hide
+    (fp_text value 0.5A/30V (at 0 -2.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -2.25 -1.6) (end -2.25 1.6) (layer B.Fab) (width 0.1))
