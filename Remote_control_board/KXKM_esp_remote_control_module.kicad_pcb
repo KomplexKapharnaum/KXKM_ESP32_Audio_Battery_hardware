@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 50)
+    (drawings 51)
     (tracks 206)
     (zones 0)
     (modules 21)
@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.6)
     (user_trace_width 1)
@@ -1369,6 +1369,9 @@
     )
   )
 
+  (gr_text "KXKM\nRemote board for\nESP32 module V1.0" (at 139.7 105.41 270) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.1)))
+  )
   (gr_line (start 156.972 99.568) (end 156.972 86.36) (layer F.SilkS) (width 0.2))
   (gr_line (start 165.1 99.568) (end 156.972 99.568) (layer F.SilkS) (width 0.2))
   (gr_line (start 165.1 85.852) (end 165.1 99.568) (layer F.SilkS) (width 0.2))
