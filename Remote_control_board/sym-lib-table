@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SparkFun-Switches)(type Legacy)(uri C:/Users/utilisateur/Documents/KXKM/Git/RPi-Teleco/RPi_Teleco_PCB/SparkFun-Switches.lib)(options "")(descr ""))
+  (lib (name SparkFun-Boards)(type Legacy)(uri C:/Users/utilisateur/Documents/KXKM/Git/RPi-Teleco/RPi_Teleco_PCB/SparkFun-Boards.lib)(options "")(descr ""))
+)
