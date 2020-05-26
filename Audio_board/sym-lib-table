@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name KXKM_audio_board_for_ESP32-rescue)(type Legacy)(uri ${KIPRJMOD}/KXKM_audio_board_for_ESP32-rescue.lib)(options "")(descr ""))
+)
