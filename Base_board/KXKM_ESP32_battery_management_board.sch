@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L espressif-xess:ESP32-WROOM U1
+L KXKM_ESP32_battery_management_board-rescue:ESP32-WROOM-espressif-xess U1
 U 1 1 5A8A8AB3
 P 4550 2150
 F 0 "U1" H 5800 2700 60  0000 R CNN

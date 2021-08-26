@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L stm32:STM32F030F4Px U7
+L KXKM_ESP32_battery_management_board-rescue:STM32F030F4Px-stm32 U7
 U 1 1 5A8AB82B
 P 6650 2050
 F 0 "U7" H 6650 2150 50  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 525 5525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tom_kicad:TC_SWD P1
+L KXKM_ESP32_battery_management_board-rescue:TC_SWD-tom_kicad P1
 U 1 1 5A9FA4FD
 P 1350 2050
 F 0 "P1" H 1100 2250 60  0000 C CNN

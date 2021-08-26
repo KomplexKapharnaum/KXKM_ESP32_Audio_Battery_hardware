@@ -18,7 +18,7 @@ Main battery input\n5.5 - 30VDC
 Text Notes 9650 2000 0    60   ~ 12
 Battery power output.\nMax 10A
 $Comp
-L tom_kicad:DC_DC_POL U5
+L KXKM_ESP32_battery_management_board-rescue:DC_DC_POL-tom_kicad U5
 U 1 1 5A9FAEA4
 P 8650 2350
 F 0 "U5" H 8650 2300 60  0000 C CNN
@@ -325,7 +325,7 @@ F 3 "" H 9400 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C6
+L KXKM_ESP32_battery_management_board-rescue:CP1_Small-Device C6
 U 1 1 5AA2FD90
 P 2150 1500
 F 0 "C6" H 2160 1570 50  0000 L CNN
@@ -793,7 +793,7 @@ $EndComp
 Wire Wire Line
 	6800 2500 6800 2450
 $Comp
-L KXKM_ESP32_battery_management_board-rescue:USB_A-Connector J9
+L KXKM_ESP32_battery_management_board-rescue:USB_A-Connector-KXKM_ESP32_battery_management_board-rescue J9
 U 1 1 5C7F21B9
 P 9800 4000
 AR Path="/5C7F21B9" Ref="J9"  Part="1" 
