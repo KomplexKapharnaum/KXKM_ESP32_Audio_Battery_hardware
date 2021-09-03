@@ -586,6 +586,6 @@ Wire Wire Line
 	5600 6450 6300 6450
 Wire Wire Line
 	2900 2750 3450 2750
-Text Label 2900 1350 0    60   ~ 12
-TEMP_MEAS
+Text HLabel 2900 1350 0    60   Input ~ 12
+AUTOBOOT_SENSE
 $EndSCHEMATC
