@@ -1,3 +1,24 @@
+# Procédure prod 05/19
+* Contrôle visuel dessus & dessous (polarité IC, diodes)
+* Alim 6V 0.05A => check 3.3V à l'appui sur le bouton.
+* Alim 24V 0.5A + constant current load => Flash STM32_HW_Test et exécuter tous les tests
+//!!!!! CHANGER LES SEUILS !!
+* Alim 6V 0.5A (ou injecte 3.3V direct) => Flash STM32 KXKM Batt Monitoring + assign ID + marquage
+*       Flash ESP32 HW Test
+
+# 23/07/19 troubleshooting prog. ESP
+* =>> erreur Warning: Could not auto-detect Flash size (FlashID=0xffffff, SizeID=0xff), defaulting to 4MB : vérifier que IO6-IO11 ne sont pas en CC ; vérifier IO12 LOW (https://github.com/espressif/esptool/issues/263)
+    Un bon coup de chaud sur l'ESP32 jusquà ce qu'il flotte et c'est reparti...
+
+* Vérifier RX conn prog <-> ESP => rés. 1k
+* Vérifier TX conn prog <-> ESP => connectés
+* vérifier TX, RX pas en CC / pas en CC GND, 3.3V
+* vérifier ESP32 BOOT, EN pas en CC GND, 3.3V
+* vérifier 3.3V, GND ESP
+* lancer prog et vérifier qu'il y a une pulse nég sur BOOT, nég sur EN
+
+
+
 * Pas de court circuit entre - et + BATT, +3.3V
 * Alimenter par Power In sous 6V (limite 100mA)
 * Appuyer sur SW3 et vérifier la présence 3.3V tant qu'on tient SW3 appuyé.
