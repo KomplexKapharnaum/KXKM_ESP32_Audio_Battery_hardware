@@ -2301,6 +2301,11 @@
     (uuid ffa442c7-cbef-461f-8613-c211201cec06)
   )
 
+  (text "NB: VSPI is used for SD card and re-assigned to different GPIO.\nThis limits the bus frequency to 26MHz instead of 80MHz"
+    (at 193.04 18.415 0)
+    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
+    (uuid 0f4f2bcd-12b7-4012-a8b4-560cf52ea244)
+  )
   (text "DMX / RS-485 transceiver" (at 226.06 106.68 0)
     (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
     (uuid 44035e53-ff94-45ad-801f-55a1ce042a0d)
@@ -2317,6 +2322,11 @@
   (text "Input only\nNo PU, no PD" (at 134.62 67.31 0)
     (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
     (uuid 78b44915-d68e-4488-a873-34767153ef98)
+  )
+  (text "P/N : 112J-TDAR-R01 / TFP09-2-12B \nToDo : SD card could be switched to 4-bit mode for better throughput"
+    (at 196.85 50.165 0)
+    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
+    (uuid 869ee34e-3528-4b4e-92d1-8d588830ae51)
   )
   (text "Buffer for 5V digital LED strip" (at 212.09 157.48 0)
     (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
