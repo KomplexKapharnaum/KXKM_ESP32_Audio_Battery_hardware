@@ -1,0 +1,51 @@
+{
+    // There can be C-like comments
+    "layout": {
+        "type": "grid",
+        "rows": 3,
+        "cols": 3,
+        "space": "2mm",
+        "rotation": "0deg",
+        "alternation": "none",
+        "renamenet": "B{n}-{orig}",
+        "renameref": "B{n}-{orig}"
+    },
+    "source": {
+        "type": "auto",
+        "tolerance": "15mm"
+    },
+    "tabs": {
+        "type": "fixed",
+        "width": "5mm"
+    },
+    "cuts": {
+        "type": "mousebites",
+        "drill": "0.5mm",
+        "spacing":"1mm",
+        "offset":"0.2mm",
+        "prolong":"0.5mm"
+    },
+    "framing": {
+        "type": "railstb",
+        "width": "5mm",
+        "space":"3mm",
+        "copperfill":"solid"
+    },
+    "tooling":{
+
+     "type":"3hole",
+     "hoffset": "2.5mm",
+     "voffset": "2.5mm",
+     "size": "1.5mm"
+    },
+    "fiducials":{
+     "type":"3fid",
+     "hoffset": "5mm",
+     "voffset": "2.5mm",
+     "coppersize": "2mm",
+     "opening":"1mm"
+    },
+    "post": {
+        "millradius": "1mm",
+    }
+}

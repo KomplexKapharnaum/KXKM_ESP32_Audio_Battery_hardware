@@ -1,12 +1,14 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": true,
+    "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
+      "images": 0.6,
       "pads": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
@@ -33,13 +35,11 @@
       3,
       4,
       5,
-      8,
       9,
       10,
       11,
       12,
       13,
-      14,
       15,
       16,
       17,
@@ -48,8 +48,6 @@
       20,
       21,
       22,
-      23,
-      24,
       25,
       26,
       27,
@@ -60,9 +58,9 @@
       33,
       34,
       35,
-      36
+      40
     ],
-    "visible_layers": "0029032_80000007",
+    "visible_layers": "0001270_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
@@ -70,6 +68,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "KXKM_ESP32_battery_management_board.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 116,
+          "pos_y": 107,
+          "size_x": 1496,
+          "size_y": 880
+        }
+      },
+      {
+        "name": "KXKM_ESP32_battery_management_board.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 1,
+          "maximized": true,
+          "pos_x": -1546,
+          "pos_y": -234,
+          "size_x": 1728,
+          "size_y": 1019
+        }
+      }
+    ]
   }
 }
