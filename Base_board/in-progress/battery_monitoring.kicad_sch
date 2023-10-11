@@ -8,9 +8,11 @@
     (title "ESP32 battery management module")
     (date "2023-06-14")
     (rev "3.2")
-    (comment 1 "Tom Magnier / initial release")
-    (comment 2 "Viven Henry / SD, Switch, Autoboot")
-    (comment 3 "Clément SAILLANT / update Autoboot, readd SD")
+    (company "for : KXKM")
+    (comment 1 "update PCB, add optional SD, ....")
+    (comment 2 "Clément SAILLANT (v3.2) : improve Autoboot")
+    (comment 3 "Viven Henry (v3) : remove SD, add Switch, add Autoboot")
+    (comment 4 "Tom Magnier :  initial release (v1 & v2)")
   )
 
   (lib_symbols
