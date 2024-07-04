@@ -70,18 +70,6 @@
   "project": {
     "files": [
       {
-        "name": "KXKM_ESP32_battery_management_board.kicad_pcb",
-        "open": true,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 123,
-          "pos_y": 493,
-          "size_x": 1605,
-          "size_y": 568
-        }
-      },
-      {
         "name": "KXKM_ESP32_battery_management_board.kicad_sch",
         "open": true,
         "window": {
@@ -91,6 +79,18 @@
           "pos_y": 38,
           "size_x": 1728,
           "size_y": 966
+        }
+      },
+      {
+        "name": "KXKM_ESP32_battery_management_board.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 123,
+          "pos_y": 493,
+          "size_x": 1605,
+          "size_y": 568
         }
       }
     ]

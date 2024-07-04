@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name KXKM_audio_board_for_ESP32-rescue)(type Legacy)(uri ${KIPRJMOD}/KXKM_audio_board_for_ESP32-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "KXKM_audio_board_for_ESP32-rescue")(type "KiCad")(uri "${KIPRJMOD}/KXKM_audio_board_for_ESP32-rescue.kicad_sym")(options "")(descr ""))
 )
