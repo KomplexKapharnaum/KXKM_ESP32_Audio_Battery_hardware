@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -74,6 +74,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "KXKM_ESP32_battery_management_board.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 116,
+          "pos_y": 139,
+          "size_x": 1496,
+          "size_y": 838
+        }
+      },
+      {
+        "name": "KXKM_ESP32_battery_management_board.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 116,
+          "pos_y": 38,
+          "size_x": 1496,
+          "size_y": 880
+        }
+      }
+    ]
   }
 }
