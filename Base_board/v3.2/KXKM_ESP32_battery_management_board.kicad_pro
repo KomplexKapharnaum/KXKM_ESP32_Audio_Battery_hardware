@@ -518,9 +518,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "KXKM_ESP32_battery_management_board.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "KXKM_ESP32_battery_management_board.wrl"
     },
     "page_layout_descr_file": ""
   },
