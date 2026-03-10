@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "25247d0c-5910-484b-9651-5750d422a450")
 	(paper "A4")
 	(title_block
@@ -14,9 +14,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -77,10 +81,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -89,10 +93,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -138,11 +142,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -215,7 +224,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0) (xy -0.762 0)
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
 					)
 					(stroke
 						(width 0)
@@ -239,19 +260,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+						(xy 1.016 0) (xy -0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -300,11 +309,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -413,6 +427,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "KXKM_ESP32_battery_management_board-rescue:STM32F030F4Px-stm32"
 			(pin_names
@@ -475,17 +490,71 @@
 						(type none)
 					)
 				)
-				(pin input line
-					(at 81.28 -15.24 180)
+				(pin bidirectional line
+					(at -81.28 27.94 0)
 					(length 7.62)
-					(name "BOOT0"
+					(name "PA0/ADC_IN0/RTC_TAMP2/SYS_WKUP1/USART1_CTS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -81.28 25.4 0)
+					(length 7.62)
+					(name "PA1/ADC_IN1/USART1_DE/USART1_RTS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -81.28 22.86 0)
+					(length 7.62)
+					(name "PA2/ADC_IN2/USART1_TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -81.28 20.32 0)
+					(length 7.62)
+					(name "PA3/ADC_IN3/USART1_RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -566,60 +635,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 81.28 27.94 180)
-					(length 7.62)
-					(name "PB1/ADC_IN9/TIM14_CH1/TIM1_CH3N/TIM3_CH4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 81.28 -22.86 180)
-					(length 7.62)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -81.28 -22.86 0)
-					(length 7.62)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at -81.28 7.62 0)
 					(length 7.62)
 					(name "PA9/I2C1_SCL/TIM1_CH2/USART1_TX"
@@ -674,24 +689,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at -81.28 -15.24 0)
-					(length 7.62)
-					(name "PF0-OSC_IN/RCC_OSC_IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at -81.28 0 0)
 					(length 7.62)
 					(name "PA14/SYS_SWCLK/USART1_TX"
@@ -702,6 +699,24 @@
 						)
 					)
 					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -81.28 -15.24 0)
+					(length 7.62)
+					(name "PF0-OSC_IN/RCC_OSC_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -727,17 +742,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 81.28 -17.78 180)
+				(pin power_in line
+					(at -81.28 -22.86 0)
 					(length 7.62)
-					(name "NRST"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -764,16 +779,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at -81.28 27.94 0)
+					(at 81.28 27.94 180)
 					(length 7.62)
-					(name "PA0/ADC_IN0/RTC_TAMP2/SYS_WKUP1/USART1_CTS"
+					(name "PB1/ADC_IN9/TIM14_CH1/TIM1_CH3N/TIM3_CH4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -781,17 +796,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -81.28 25.4 0)
+				(pin input line
+					(at 81.28 -15.24 180)
 					(length 7.62)
-					(name "PA1/ADC_IN1/USART1_DE/USART1_RTS"
+					(name "BOOT0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -799,17 +814,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -81.28 22.86 0)
+				(pin input line
+					(at 81.28 -17.78 180)
 					(length 7.62)
-					(name "PA2/ADC_IN2/USART1_TX"
+					(name "NRST"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -817,17 +832,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -81.28 20.32 0)
+				(pin power_in line
+					(at 81.28 -22.86 180)
 					(length 7.62)
-					(name "PA3/ADC_IN3/USART1_RX"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -836,6 +851,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "KXKM_ESP32_battery_management_board-rescue:TC_SWD-tom_kicad"
 			(pin_names
@@ -918,24 +934,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 2.54 180)
-					(length 7.62)
-					(name "SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at -15.24 0 0)
 					(length 7.62)
 					(name "~{RESET}"
@@ -946,6 +944,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -2.54 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 7.62)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -972,24 +1006,6 @@
 					)
 				)
 				(pin power_in line
-					(at -15.24 -2.54 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at 15.24 -2.54 180)
 					(length 7.62)
 					(name "SWO"
@@ -1008,10 +1024,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_SP3T"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1092,7 +1111,7 @@
 					)
 				)
 				(circle
-					(center 2.032 -2.54)
+					(center 2.032 2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -1114,7 +1133,7 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
+					(center 2.032 -2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -1126,6 +1145,24 @@
 				)
 			)
 			(symbol "SW_SP3T_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -1163,24 +1200,6 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "4"
@@ -1199,6 +1218,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
@@ -1267,7 +1287,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1279,7 +1299,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1293,7 +1313,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1310,6 +1331,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
@@ -1378,7 +1400,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1390,7 +1412,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1404,7 +1426,8 @@
 			(symbol "+BATT_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+BATT"
 						(effects
 							(font
@@ -1421,6 +1444,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1491,7 +1515,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1508,7 +1533,86 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Li-Po\nLi-Fe\nCustom (set by ESP32)"
+		(exclude_from_sim no)
+		(at 53.34 138.43 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "22614aba-2c26-4590-8e12-a7a6b6de48de")
+	)
+	(text "Battery type selector"
+		(exclude_from_sim no)
+		(at 19.05 144.78 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "624c6565-c4fd-4d29-87af-f77dd1ba0898")
+	)
+	(text "Battery voltage measurement\n+BATT = 30V => 3.14V"
+		(exclude_from_sim no)
+		(at 15.24 194.31 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "aae29862-3850-48eb-b7a8-38a62a8029dd")
+	)
+	(text "LED array for battery level display"
+		(exclude_from_sim no)
+		(at 128.27 193.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4afdd30-7a78-4cd8-8670-bb6dd787dcdc")
+	)
+	(text "SWDIO & SWCLK can only be used\nif selector is in pos. 3"
+		(exclude_from_sim no)
+		(at 27.94 63.5 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2564ecf-bd43-431d-b9a2-c7be54487485")
+	)
+	(text "USART1 is also used by\nthe serial bootloader."
+		(exclude_from_sim no)
+		(at 31.75 46.99 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc0df782-a446-4364-8dc7-0190637b5f77")
 	)
 	(junction
 		(at 31.75 176.53)
@@ -2316,87 +2420,8 @@
 		)
 		(uuid "fc052ac4-77ec-4901-baf8-c95f94903836")
 	)
-	(text "Li-Po\nLi-Fe\nCustom (set by ESP32)"
-		(exclude_from_sim no)
-		(at 53.34 138.43 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "22614aba-2c26-4590-8e12-a7a6b6de48de")
-	)
-	(text "Battery type selector"
-		(exclude_from_sim no)
-		(at 19.05 144.78 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "624c6565-c4fd-4d29-87af-f77dd1ba0898")
-	)
-	(text "Battery voltage measurement\n+BATT = 30V => 3.14V"
-		(exclude_from_sim no)
-		(at 15.24 194.31 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "aae29862-3850-48eb-b7a8-38a62a8029dd")
-	)
-	(text "LED array for battery level display"
-		(exclude_from_sim no)
-		(at 128.27 193.04 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "b4afdd30-7a78-4cd8-8670-bb6dd787dcdc")
-	)
-	(text "SWDIO & SWCLK can only be used\nif selector is in pos. 3"
-		(exclude_from_sim no)
-		(at 27.94 63.5 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "c2564ecf-bd43-431d-b9a2-c7be54487485")
-	)
-	(text "USART1 is also used by\nthe serial bootloader."
-		(exclude_from_sim no)
-		(at 31.75 46.99 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "dc0df782-a446-4364-8dc7-0190637b5f77")
-	)
 	(label "LED_BAR_4"
 		(at 73.66 26.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2409,7 +2434,6 @@
 	)
 	(label "LED_BAR_3"
 		(at 73.66 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2422,7 +2446,6 @@
 	)
 	(label "STM32_RST"
 		(at 26.67 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2435,7 +2458,6 @@
 	)
 	(label "STM32_RST"
 		(at 264.16 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2448,7 +2470,6 @@
 	)
 	(label "LED_BAR_4"
 		(at 121.92 186.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2461,7 +2482,6 @@
 	)
 	(label "BATT_TYPE_1"
 		(at 52.07 133.35 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2474,7 +2494,6 @@
 	)
 	(label "VBAT_MEAS"
 		(at 264.16 24.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2487,7 +2506,6 @@
 	)
 	(label "BATT_TYPE_1"
 		(at 73.66 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2500,7 +2518,6 @@
 	)
 	(label "LED_BAR_1"
 		(at 121.92 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2513,7 +2530,6 @@
 	)
 	(label "LED_BAR_2"
 		(at 121.92 171.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2526,7 +2542,6 @@
 	)
 	(label "BATT_TYPE_2"
 		(at 73.66 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2539,7 +2554,6 @@
 	)
 	(label "LED_BAR_2"
 		(at 73.66 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2552,7 +2566,6 @@
 	)
 	(label "VBAT_MEAS"
 		(at 53.34 176.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2565,7 +2578,6 @@
 	)
 	(label "BATT_TYPE_2"
 		(at 52.07 135.89 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2578,7 +2590,6 @@
 	)
 	(label "LED_BAR_3"
 		(at 121.92 179.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2591,7 +2602,6 @@
 	)
 	(label "LED_BAR_1"
 		(at 73.66 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2605,7 +2615,6 @@
 	(hierarchical_label "STM32_RESET"
 		(shape input)
 		(at 264.16 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2619,7 +2628,6 @@
 	(hierarchical_label "ESP32_EN"
 		(shape output)
 		(at 73.66 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2633,7 +2641,6 @@
 	(hierarchical_label "MAIN_OUT_EN"
 		(shape output)
 		(at 73.66 39.37 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2647,7 +2654,6 @@
 	(hierarchical_label "LOAD_I_SENSE"
 		(shape input)
 		(at 73.66 36.83 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2661,7 +2667,6 @@
 	(hierarchical_label "AUTOBOOT_SENSE"
 		(shape input)
 		(at 73.66 34.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2675,7 +2680,6 @@
 	(hierarchical_label "STM32_BOOT"
 		(shape input)
 		(at 264.16 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2689,7 +2693,6 @@
 	(hierarchical_label "STM32_TX"
 		(shape output)
 		(at 73.66 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2703,7 +2706,6 @@
 	(hierarchical_label "STM32_RX"
 		(shape input)
 		(at 73.66 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2717,7 +2719,6 @@
 	(hierarchical_label "EN_PUSH_BUTTON"
 		(shape input)
 		(at 73.66 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2731,7 +2732,6 @@
 	(hierarchical_label "3.3V_EN"
 		(shape output)
 		(at 73.66 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
