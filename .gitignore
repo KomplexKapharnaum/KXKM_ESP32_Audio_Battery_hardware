@@ -38,6 +38,10 @@ bom/
 # Gerber export output
 out/
 
+# KiCad backup archives
+*-backups/
+*-backups/*.zip
+
 ### Linux ###
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -52,5 +56,8 @@ out/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-# End of https://www.gitignore.io/api/kicad,linux
+# macOS metadata
+.DS_Store
+**/.DS_Store
 
+# End of https://www.gitignore.io/api/kicad,linux
